@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Recetas fáciles para tu airfryer | PhilMeders</title>
+<meta name="description" content="Recetas sencillas y crujientes para tu airfryer, con tiempos y temperaturas listos para cocinar. Guía digital con acceso inmediato.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1111452304966673');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1111452304966673&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+<style>
+:root{
+  --coal:#14372B;      /* verde bosque */
+  --coal2:#1D4A3A;
+  --crisp:#F2B33D;     /* amarillo sol */
+  --red:#C8553D;      /* rojo tomate */
+  --leaf:#1F6B4F;      /* verde PhilMeders */
+  --paper:#EDF2EC;
+  --white:#FFFFFF;
+  --ink:#14372B;
+  --ink2:#3F5A4E;
+  --line:#CFDACF;
+  --d:'Bricolage Grotesque',Georgia,serif;
+  --b:'Figtree',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0}
+html{color-scheme:light;scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font:400 1.08rem/1.7 var(--b);-webkit-font-smoothing:antialiased;padding-bottom:env(safe-area-inset-bottom,0px)}
+h1,h2,h3{font-family:var(--d);line-height:1.1;letter-spacing:-.02em;font-weight:800}
+h1{font-size:clamp(2.2rem,6.4vw,3.7rem)}
+h2{font-size:clamp(1.65rem,4.6vw,2.4rem);margin-bottom:1rem}
+h3{font-size:1.2rem;margin-bottom:.3rem}
+p{margin-bottom:1.1rem;color:var(--ink2)}
+strong{color:var(--ink);font-weight:600}
+.wrap{max-width:720px;margin:0 auto;padding:0 22px}
+.wide{max-width:1020px;margin:0 auto;padding:0 22px}
+section{padding:64px 0}
+.dark{background:var(--coal);color:#E6F0EA}
+.dark h2,.dark h3,.dark strong{color:#fff}
+.dark p{color:#C3D6CB}
+
+/* barra superior */
+.top{background:var(--coal);color:#fff;text-align:center;font-size:.9rem;padding:.55rem 1rem;padding-top:calc(.55rem + env(safe-area-inset-top,0px))}
+.top b{color:var(--crisp);font-weight:600}
+
+/* hero */
+.hero{background:var(--coal);color:#fff;padding:44px 0 72px;overflow:hidden}
+.hero .wide{display:grid;grid-template-columns:1.15fr .85fr;gap:36px;align-items:center}
+.brand{display:flex;align-items:center;gap:.55rem;font:800 1.15rem var(--d);margin-bottom:2rem}
+.brand svg{width:30px;height:30px}
+.brand i{font-style:normal;font-weight:500;color:var(--crisp)}
+.hero h1{color:#fff;margin-bottom:1.1rem}
+.hero h1 em{font-style:normal;color:var(--crisp)}
+.hero p.lead{font-size:1.15rem;color:#CFE0D6;max-width:34ch}
+.cta{display:inline-block;text-decoration:none;border:0;cursor:pointer;background:var(--crisp);color:var(--coal);font:600 1.1rem var(--b);padding:1.05rem 1.9rem;border-radius:14px;transition:transform .2s,box-shadow .2s,background .2s;text-align:center}
+.cta:hover{background:#F7C463;transform:translateY(-2px);box-shadow:0 14px 26px -14px rgba(242,179,61,.95)}
+:focus-visible{outline:3px solid var(--crisp);outline-offset:3px}
+.hero small{display:block;margin-top:.9rem;color:#9DB8A9;font-size:.88rem}
+
+/* dial: elemento memorable */
+.dial{width:100%;max-width:340px;margin:0 auto;display:block}
+.dial .dot{opacity:0;animation:pop .3s 1.9s forwards}
+@keyframes pop{to{opacity:1}}
+.dial .ring{stroke-dasharray:690;stroke-dashoffset:690;animation:sweep 1.8s .3s cubic-bezier(.3,.7,.2,1) forwards}
+@keyframes sweep{to{stroke-dashoffset:170}}
+
+/* texto de la carta */
+.letter h2{margin-top:0}
+.letter p{font-size:1.1rem}
+.pull{border-left:5px solid var(--red);padding:.4rem 0 .4rem 1.1rem;margin:1.6rem 0;font:500 1.3rem/1.4 var(--d);color:var(--ink);letter-spacing:-.01em}
+
+/* chips tiempo/temperatura */
+.chip{display:inline-flex;gap:.4rem;align-items:center;font:600 .86rem var(--b);background:#FFF1CC;color:#6B4A00;border:1px solid #F2D58C;border-radius:8px;padding:.15rem .55rem;white-space:nowrap}
+
+/* qué incluye */
+.inc{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:1.6rem}
+.inc div{background:#fff;border:1px solid var(--line);border-radius:14px;padding:1.2rem 1.2rem 1rem}
+.inc div:first-child{grid-column:1/-1;background:var(--leaf);border-color:var(--leaf)}
+.inc div:first-child h3,.inc div:first-child p{color:#fff}
+.inc div:first-child p{color:#C3D6CB}
+.inc p{font-size:.98rem;margin:0}
+.inc div h3{color:var(--ink)}
+.inc div p{color:#2F4A3E}
+
+/* tarjeta de receta */
+.rcard{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 22px 40px -30px rgba(20,55,43,.6);margin-top:1.6rem}
+.rcard header{background:var(--coal);color:#fff;padding:1.1rem 1.3rem;display:flex;flex-wrap:wrap;gap:.6rem 1rem;align-items:center;justify-content:space-between}
+.rcard header h3{margin:0;color:#fff}
+.rcard .specs{display:flex;gap:.45rem;flex-wrap:wrap}
+.rcard .body{padding:1.2rem 1.3rem 1.3rem;display:grid;grid-template-columns:1fr 1.3fr;gap:1.4rem}
+.rcard h4{font:600 .95rem var(--b);color:var(--ink);margin-bottom:.4rem}
+.rcard ul,.rcard ol{padding-left:1.2rem;font-size:.97rem;color:var(--ink2)}
+.rcard li{margin-bottom:.25rem}
+.cap{font-size:.85rem;color:#5E7468;margin-top:.8rem}
+
+/* pasos */
+.steps{counter-reset:s;list-style:none;padding:0;margin-top:1.4rem}
+.steps li{counter-increment:s;position:relative;padding:0 0 1.4rem 3.4rem;color:var(--ink2)}
+.steps li::before{content:counter(s);position:absolute;left:0;top:0;width:2.3rem;height:2.3rem;border-radius:50%;background:var(--leaf);color:#fff;display:grid;place-items:center;font:800 1.1rem var(--d)}
+.steps li::after{content:"";position:absolute;left:1.1rem;top:2.5rem;bottom:.2rem;width:2px;background:var(--line)}
+.steps li:last-child::after{display:none}
+.steps b{display:block;color:var(--ink);font:800 1.15rem var(--d)}
+
+/* para quién */
+.fit{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:1.4rem}
+.fit div{background:#fff;border:1px solid var(--line);border-radius:14px;padding:1.2rem}
+.fit ul{list-style:none;padding:0}
+.fit li{padding-left:1.5rem;position:relative;margin-bottom:.5rem;font-size:.98rem;color:var(--ink2)}
+.fit .yes li::before{content:"✓";position:absolute;left:0;color:var(--leaf);font-weight:700}
+.fit .no li::before{content:"✕";position:absolute;left:0;color:var(--red);font-weight:700;font-size:.9rem}
+
+/* oferta */
+.offer{background:#fff;color:var(--ink);border-radius:22px;padding:2rem 1.5rem;text-align:center;margin-top:1.6rem}
+.offer h3{font-size:1.4rem}
+.offer ul{list-style:none;padding:0;text-align:left;max-width:420px;margin:1.2rem auto}
+.offer li{padding-left:1.6rem;position:relative;margin-bottom:.45rem;color:var(--ink);font-size:1rem}
+.offer li::before{content:"✓";position:absolute;left:0;color:var(--leaf);font-weight:700}
+.old{color:var(--red);text-decoration:line-through;font-size:1.1rem;margin:0}
+.price{font:800 clamp(3rem,12vw,4.4rem) var(--d);color:var(--ink);line-height:1;letter-spacing:-.03em}
+.offer small{display:block;color:#2F4A3E;font-size:.9rem;margin-top:.8rem}
+.dark .offer h3{color:var(--ink)}
+.dark .offer p{color:#2F4A3E}
+.dark .offer .old{color:#B4392A;font-weight:600}
+.dark .offer .price-note{color:#2F4A3E;font-size:.95rem;margin:.4rem 0 1.3rem}
+.offer .cta{width:100%;max-width:420px}
+.guar{display:flex;gap:1rem;align-items:flex-start;margin-top:1.6rem}
+.guar svg{flex:none;width:54px;height:54px}
+.guar p{margin:0;font-size:1rem}
+
+/* faq */
+details{background:#fff;border:1px solid var(--line);border-radius:14px;margin-bottom:.7rem}
+summary{cursor:pointer;list-style:none;padding:1rem 1.2rem;font:600 1.05rem var(--b);color:var(--ink);display:flex;justify-content:space-between;gap:1rem}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font:500 1.5rem/1 var(--d);color:var(--leaf);transition:transform .2s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{padding:0 1.2rem;margin:0 0 1rem;font-size:1rem}
+
+.ps{border-top:1px solid var(--line);margin-top:2rem;padding-top:1.4rem}
+.center{text-align:center}
+footer{background:var(--coal);color:#9DB8A9;text-align:center;font-size:.84rem;line-height:1.7;padding:36px 22px calc(36px + env(safe-area-inset-bottom,0px))}
+footer a{color:var(--crisp)}
+
+[hidden]{display:none!important}
+
+@media(max-width:760px){
+  .hero .wide{grid-template-columns:1fr}
+  .dial{max-width:240px;order:-1;margin-bottom:.4rem}
+  .hero p.lead{max-width:none}
+  .inc,.fit,.rcard .body{grid-template-columns:1fr}
+  section{padding:52px 0}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.dial .ring{stroke-dashoffset:170}.dial .dot{opacity:1}}
+</style>
+</head>
+<body>
+
+<div class="top">Guía digital · <b>acceso inmediato</b> · 7 días de garantía</div>
+
+<header class="hero">
+  <div class="wide">
+    <div>
+      <div class="brand">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="14" fill="#1F6B4F"/><rect x="13" y="10" width="5.5" height="28" rx="2.7" fill="#F8FAF6"/><circle cx="27" cy="21" r="9" fill="none" stroke="#F2B33D" stroke-width="5"/><path d="M22.5 25.5c0-5.5 3.5-8.5 9-8.5 0 5.5-3.5 8.5-9 8.5z" fill="#F8FAF6"/></svg>
+        Phil<i>Meders</i>
+      </div>
+      <h1>Tu airfryer puede hacer mucho más que papas fritas: <em>cocina platos crujientes en menos de 30 minutos.</em></h1>
+      <p class="lead">Recetas sencillas, con la temperatura y el tiempo exactos, para que enciendas tu airfryer y sepas qué preparar hoy.</p>
+      <small>Producto digital · Acceso inmediato · 7 días de garantía</small>
+    </div>
+    <svg class="dial" viewBox="0 0 280 280" role="img" aria-label="Perilla de temperatura de la airfryer marcando 180 grados">
+      <circle cx="140" cy="140" r="126" fill="#1D4A3A"/>
+      <circle cx="140" cy="140" r="110" fill="none" stroke="#2C6150" stroke-width="14"/>
+      <circle class="ring" cx="140" cy="140" r="110" fill="none" stroke="#F2B33D" stroke-width="14" stroke-linecap="round" transform="rotate(135 140 140)"/>
+      <g stroke="#7FA391" stroke-width="3" stroke-linecap="round">
+        <path d="M140 38v12M214 66l-8 8M242 140h-12M214 214l-8-8M66 214l8-8M38 140h12M66 66l8 8"/>
+      </g>
+      <text x="140" y="146" text-anchor="middle" font-family="Bricolage Grotesque,Georgia,serif" font-weight="800" font-size="74" fill="#fff" letter-spacing="-3">180°</text>
+      <text x="140" y="182" text-anchor="middle" font-family="Figtree,system-ui,sans-serif" font-weight="600" font-size="20" fill="#F2B33D">12 min</text>
+      <circle class="dot" cx="216.4" cy="219.1" r="10" fill="#C8553D" stroke="#fff" stroke-width="3"/>
+    </svg>
+  </div>
+</header>
+
+<section class="letter">
+  <div class="wrap">
+    <h2>¿Te pasa que compraste la airfryer y casi siempre haces lo mismo?</h2>
+    <p>Llegó con toda la ilusión. Las primeras semanas la usaste a diario. Después, sin darte cuenta, quedó en un rincón de la cocina y solo la sacas para calentar algo o hacer papas.</p>
+    <p>No es que no sepas cocinar. Es que cada vez que quieres probar algo nuevo aparecen las mismas dudas:</p>
+    <p><strong>¿A qué temperatura va? ¿Cuántos minutos? ¿Hay que precalentar? ¿Se le pone aceite o no?</strong></p>
+    <p>Buscas en internet, encuentras diez versiones distintas, ninguna explica lo mismo y terminas pidiendo algo a domicilio.</p>
+    <div class="pull">No necesitas más recetas sueltas. Necesitas recetas probadas, ordenadas y con los datos exactos para cocinar sin adivinar.</div>
+    <p>Por eso armé una guía que reúne todo en un solo lugar, con lenguaje simple, ingredientes de supermercado y pasos que cualquiera puede seguir, aunque sea la primera vez que usas una airfryer.</p>
+  </div>
+</section>
+
+<section class="dark">
+  <div class="wide">
+    <div class="wrap" style="padding:0">
+      <h2>Te presento <span style="color:var(--crisp)">Recetas Fáciles en Airfryer</span></h2>
+      <p>Una guía digital en PDF con recetas pensadas para el día a día: rápidas, crujientes y con pocos ingredientes. Cada una indica temperatura, tiempo y porciones, para que solo tengas que seguir los pasos.</p>
+    </div>
+    <div class="inc">
+      <div>
+        <h3>Recetas para cada momento del día</h3>
+        <p>Desayunos, almuerzos, cenas, snacks y postres, organizadas por categoría para que encuentres rápido qué cocinar según el tiempo que tengas.</p>
+      </div>
+      <div><h3>Temperatura y tiempo en cada receta</h3><p>Sin adivinar. Cada plato trae sus datos exactos y las indicaciones para dar vuelta o agitar la canasta.</p></div>
+      <div><h3>Ingredientes fáciles de conseguir</h3><p>Nada de productos raros ni caros. Recetas con lo que normalmente ya tienes en casa.</p></div>
+      <div><h3>Pasos cortos y claros</h3><p>Instrucciones simples, pensadas para quien está empezando y para quien ya cocina a diario.</p></div>
+      <div><h3>Consejos de uso y limpieza</h3><p>Cómo evitar que se pegue la comida, cuánto llenar la canasta y cómo mantener tu equipo en buen estado.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Así se ve cada receta</h2>
+    <p>Todas siguen el mismo formato, para que no tengas que interpretar nada. Este es un ejemplo del estilo de las fichas:</p>
+    <article class="rcard" aria-label="Ejemplo de ficha de receta">
+      <header>
+        <h3>Pollo crujiente</h3>
+        <div class="specs"><span class="chip">200° C</span><span class="chip">20 min</span><span class="chip">4 porciones</span></div>
+      </header>
+      <div class="body">
+        <div>
+          <h4>Ingredientes</h4>
+          <ul><li>Piezas de pollo</li><li>Ajo en polvo y pimentón</li><li>Sal y pimienta</li><li>Un chorrito de aceite</li></ul>
+        </div>
+        <div>
+          <h4>Preparación</h4>
+          <ol><li>Sazona el pollo y déjalo reposar unos minutos.</li><li>Colócalo en la canasta sin amontonar.</li><li>Cocina y dale la vuelta a la mitad del tiempo.</li><li>Sirve apenas esté dorado.</li></ol>
+        </div>
+      </div>
+    </article>
+    <p class="cap">Ejemplo ilustrativo del formato. Los tiempos pueden variar según la marca y el tamaño de tu equipo.</p>
+  </div>
+</section>
+
+<section style="background:#fff">
+  <div class="wrap">
+    <h2>Cómo funciona</h2>
+    <ol class="steps">
+      <li><b>Haces tu pedido</b>Pagas de forma segura desde la página de pago.</li>
+      <li><b>Recibes el acceso por email</b>Apenas se confirma el pago, te llega el enlace para descargar tu guía.</li>
+      <li><b>Eliges una receta y enciendes tu airfryer</b>Sigues la ficha, y en pocos minutos tienes el plato listo.</li>
+    </ol>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>¿Es para ti?</h2>
+    <div class="fit">
+      <div class="yes">
+        <h3>Es para ti si…</h3>
+        <ul><li>Tienes una airfryer y quieres usarla más</li><li>Buscas ideas rápidas para el día a día</li><li>Prefieres instrucciones simples y exactas</li><li>Quieres cocinar con menos aceite que al freír de la forma tradicional</li></ul>
+      </div>
+      <div class="no">
+        <h3>No es para ti si…</h3>
+        <ul><li>Buscas un plan médico o una dieta personalizada</li><li>Esperas recetas de alta cocina con técnicas complejas</li><li>Todavía no tienes una airfryer</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="dark" id="oferta">
+  <div class="wrap">
+    <div class="center">
+      <h2>Empieza hoy con tu guía de recetas</h2>
+      <p>Un solo pago. Sin suscripciones. Acceso inmediato.</p>
+    </div>
+    <div class="offer">
+      <h3>Recetas Fáciles en Airfryer</h3>
+      <ul>
+        <li>Guía digital en PDF con recetas por categoría</li>
+        <li>Temperatura, tiempo y porciones en cada ficha</li>
+        <li>Consejos de uso y limpieza de tu airfryer</li>
+        <li>Acceso inmediato después de la confirmación del pago</li>
+      </ul>
+      <p class="old">Antes <span data-k="old"></span></p>
+      <div class="price" data-k="price"></div>
+      <p class="price-note">pago único</p>
+      <!-- BOTÓN UPSELL KASH PAY: pega aquí el código del botón -->
+      <div id="kashpay-upsell"></div>
+      <small>Pago seguro · Producto digital, no se envía nada físico</small>
+    </div>
+    <div class="guar">
+      <svg viewBox="0 0 54 54" aria-hidden="true"><circle cx="27" cy="27" r="25" fill="none" stroke="#F2B33D" stroke-width="3"/><text x="27" y="33" text-anchor="middle" font-family="Bricolage Grotesque,Georgia,serif" font-weight="800" font-size="22" fill="#fff">7</text><text x="27" y="44" text-anchor="middle" font-family="Figtree,sans-serif" font-weight="600" font-size="8" fill="#F2B33D">DÍAS</text></svg>
+      <p><strong>Garantía de 7 días.</strong> Si dentro de los 7 días desde tu compra sientes que la guía no es lo que esperabas, escríbenos y te devolvemos el dinero, sin complicaciones.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Preguntas frecuentes</h2>
+    <details><summary>¿En qué formato recibo la guía?</summary><p>Es un archivo digital en PDF. Puedes abrirlo en tu celular, tablet o computadora, y guardarlo para consultarlo cuando quieras.</p></details>
+    <details><summary>¿Cuándo recibo el acceso?</summary><p>De forma inmediata, apenas se confirma tu pago. Te llega un email con el enlace de acceso. Si no lo ves, revisa la carpeta de spam o promociones.</p></details>
+    <details><summary>¿Funciona con cualquier marca de airfryer?</summary><p>Sí. Las recetas indican temperatura y tiempo de referencia. Como cada equipo cocina un poco distinto, puede que necesites ajustar uno o dos minutos la primera vez.</p></details>
+    <details><summary>¿Sirve si nunca usé una airfryer?</summary><p>Sí. Las instrucciones están escritas en lenguaje simple y las recetas parten de ingredientes básicos, por lo que puedes empezar desde cero.</p></details>
+    <details><summary>¿Es un pago único?</summary><p>Sí. Pagas una sola vez y no hay suscripciones ni cobros adicionales.</p></details>
+    <details><summary>¿Y si no es lo que esperaba?</summary><p>Tienes 7 días de garantía desde la compra. Escríbenos a <a href="mailto:philipe.medeiros@gmail.com" style="color:var(--leaf)">philipe.medeiros@gmail.com</a> y te devolvemos el dinero.</p></details>
+
+    <div class="ps center">
+      <p style="font-size:1.15rem"><strong>Tu airfryer ya está en casa. Solo faltan las recetas correctas.</strong></p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © <span id="y">2026</span> PhilMeders · Philipe Medeiros · Brasil<br>
+  Contacto: <a href="mailto:philipe.medeiros@gmail.com">philipe.medeiros@gmail.com</a> · <a href="https://philmeders.com/">philmeders.com</a><br>
+  Contenido de carácter informativo y culinario. No constituye consejo médico ni nutricional. Los resultados al cocinar pueden variar según el equipo y los ingredientes.
+</footer>
+
+<script>
+(function(){
+  /* ====== EDITA AQUÍ ====== */
+  var CONFIG={
+    price:'US$ 14,90',
+    old:'US$ 29,90'
+  };
+  /* ======================== */
+  Array.prototype.forEach.call(document.querySelectorAll('[data-k]'),function(e){e.textContent=CONFIG[e.getAttribute('data-k')]});
+  document.getElementById('y').textContent=new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
